@@ -331,6 +331,7 @@
 }
 
 .subscribe__btn {
+    font-size: 0.9rem;
     text-align: center;
     border-radius: 1rem;
     box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
