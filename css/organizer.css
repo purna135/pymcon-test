@@ -84,6 +84,7 @@
     /* ================================ TEAM =================== */
     .team__container {
         gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .team__member {
@@ -101,7 +102,7 @@
 @media screen and (max-width: 600px) {
     /* ================================ TEAM =================== */
     .team__container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 0.7rem;
     }
 
