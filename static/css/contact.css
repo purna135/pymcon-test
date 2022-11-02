@@ -29,9 +29,10 @@
     margin-bottom: 2rem;
 }
 
-.contact__aside h2 {
+.contact__aside h1 {
     text-align: left;
     margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 .contact__details p {
