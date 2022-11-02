@@ -23,36 +23,36 @@
             <ul class="contact__details">
                 <li>
                     <i class="uil uil-comment-alt-lines"></i>
-                    <h5><a href="{{ .Site.Author.discourse }}">discourse.pymc.io</a></h5>
+                    <p><a href="{{ .Site.Author.discourse }}">discourse.pymc.io</a></p>
                 </li>
                 <li>
                     <i class="uil uil-chat-bubble-user"></i>
-                    <h5><a href="{{ .Site.Author.meetup }}">PyMC online meetup</a></h5>
+                    <p><a href="{{ .Site.Author.meetup }}">PyMC online meetup</a></p>
                 </li>
                 <li>
                     <i class="uil uil-envelope"></i>
-                    <h5><a href="mailto:{{ .Site.Author.email }}">{{ .Site.Author.email }}</a></h5>
+                    <p><a href="mailto:{{ .Site.Author.email }}">{{ .Site.Author.email }}</a></p>
                 </li>
             </ul>
             <ul class="contact__socials">
                 <li>
                     <a href="{{ .Site.Author.twitter }}">
-                        <i class="uil uil-twitter"></i>
+                        <i class="uil uil-twitter" aria-label="Link to PyMC twitter account"></i>
                     </a>
                 </li>
                 <li>
                     <a href="{{ .Site.Author.linkedin }}">
-                        <i class="uil uil-linkedin-alt"></i>
+                        <i class="uil uil-linkedin-alt" aria-label="Link to PyMC linkedin page"></i>
                     </a>
                 </li>
                 <li>
                     <a href="{{ .Site.Author.youtube }}">
-                        <i class="uil uil-youtube"></i>
+                        <i class="uil uil-youtube" aria-label="Link to PyMC youtube channel"></i>
                     </a>
                 </li>
                 <li>
                     <a href="{{ .Site.Author.github }}">
-                        <i class="uil uil-github"></i>
+                        <i class="uil uil-github" aria-label="Link to PyMC github"></i>
                     </a>
                 </li>
             </ul>
@@ -64,11 +64,11 @@
             action="https://docs.google.com/forms/d/e/1FAIpQLSezTTpai5ekaWKz2y3xEclTZm9yV1zPOtkTszp4t-JMHG27Uw/formResponse"
             method="post" target="hidden_iframe" onsubmit="submitted=true">
             <div class="form__name">
-                <input type="text" name="entry.1807272406" placeholder="First Name" required>
-                <input type="text" name="entry.1167870814" placeholder="Last Name" required>
+                <input type="text" name="entry.1807272406" placeholder="First Name" required aria-labelledby="First Name">
+                <input type="text" name="entry.1167870814" placeholder="Last Name" required aria-labelledby="Last Name">
             </div>
-            <input type="email" name="entry.313650237" placeholder="Your Email Address" required>
-            <textarea name="entry.54971026" rows="4" placeholder="Message" required></textarea>
+            <input type="email" name="entry.313650237" placeholder="Your Email Address" required aria-labelledby="Your Email Address">
+            <textarea name="entry.54971026" rows="4" placeholder="Message" required aria-labelledby="Message"></textarea>
             <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
     </div>

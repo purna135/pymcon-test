@@ -40,9 +40,10 @@
     text-align: center;
 }
 
-.team__member-info h4 {
+.team__member-info h2 {
     font-size: 1.2rem;
     margin-top: 1rem;
+    margin-bottom: 0;
 }
 
 .team__member-info p {
@@ -84,7 +85,6 @@
     /* ================================ TEAM =================== */
     .team__container {
         gap: 1rem;
-        grid-template-columns: repeat(3, 1fr);
     }
 
     .team__member {
@@ -102,7 +102,7 @@
 @media screen and (max-width: 600px) {
     /* ================================ TEAM =================== */
     .team__container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 0.7rem;
     }
 

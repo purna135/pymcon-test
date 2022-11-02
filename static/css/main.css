@@ -229,18 +229,19 @@ img {
     gap: 5rem;
 }
 
-.footer__logo>a:focus-visible img {
-    outline: 2px solid var(--color-white);
-    border-radius: 5px;
-    outline-offset: 3px;
-}
-
-.footer__container>div h4 {
+.footer__container>div h2 {
+    font-size: 1.3rem;
     margin-bottom: 1.2rem;
 }
 
 .footer__1 p {
     margin: 1rem 0 2rem;
+}
+
+.footer__logo>a:focus-visible img {
+    outline: 2px solid var(--color-white);
+    border-radius: 5px;
+    outline-offset: 3px;
 }
 
 .footer ul li a:hover {
@@ -399,8 +400,8 @@ img {
 
     /* ======================= FOOTER ======================== */
     .footer__container {
-        gap: 3rem;
         grid-template-columns: 1fr 1fr;
+        gap: 3rem;
     }
 }
 
