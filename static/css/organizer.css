@@ -84,11 +84,11 @@
 @media screen and (max-width: 1024px) {
     /* ================================ TEAM =================== */
     .team__container {
+        grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
     }
 
     .team__member {
-        grid-template-columns: repeat(3, 1fr);
         padding: 1rem;
     }
 
