@@ -85,7 +85,6 @@
     /* ================================ TEAM =================== */
     .team__container {
         grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
     }
 
     .team__member {
