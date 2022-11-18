@@ -26,4 +26,4 @@ summaryLength = 0
       "<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>",
     ]
     description = "An Asynchronous-first virtual conference for the Bayesian community"
-    images = ["pymcon-logo-color.png"]
+    images = ["images/pymcon-logo-color.png"]
