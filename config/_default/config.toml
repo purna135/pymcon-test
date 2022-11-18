@@ -30,3 +30,4 @@ summaryLength = 0
     ]
     description = "An Asynchronous-first virtual conference for the Bayesian community"
     images = ["./images/pymcon-logo-color.png"]
+ 
