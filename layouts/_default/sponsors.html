@@ -1,0 +1,59 @@
+{{ define "customCSS" }}
+    <link rel="stylesheet" href="/css/sponsors.css">
+    <style>
+        body {
+            background-image: url("/images/bg-texture.png");
+        }
+    </style>
+{{ end }}
+
+{{ define "customSection" }}
+<!-- ============================== START OF HEADER ===================== -->
+<header class="small__header">
+    <div class="container small__header__container">
+        <div class="small__header__left">
+            <h1>{{ .Params.Title }}</h1>
+            <p>{{ .Params.Description }}</p>
+        </div>
+
+        <div class="small__header__right">
+            <div class="small__header__right-image">
+                <img src="/images/support.svg" alt="">
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ============================== END OF HEADER ===================== -->
+
+<!-- ================================== START OF SPONSORS ============================== -->
+<section class="section sponsors" id="sponsors">
+    <div class="container sponsors__container">
+        <div class="sponsors__left">
+            <h2> Sponsor Us </h2>
+            <p>  Sponsor an online event: $1000 
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, aliquam?
+            </p>
+            <a href="{{ ref . "contact" }}" class="btn"> Contact Us </a>
+        </div>
+
+        <div class="sponsors__right">
+            <article class="sponsor">
+                <span class="sponsor__icon"><i class="uil uil-megaphone"></i></span>
+                <p> Your company logo on all social media announcements. </p>
+            </article>
+
+            <article class="sponsor">
+                <span class="sponsor__icon"><i class="uil uil-award"></i></span>
+                <p> Your company logo, name and URL on the PyMCon sponsors page. </p>
+            </article>
+
+            <article class="sponsor">
+                <span class="sponsor__icon"><i class="uil uil-microphone"></i></span>
+                <p> Opportunity to do a 1-3 minute intro at the beginning of the online webinar. </p>
+            </article>
+        </div>
+    </div>
+</section>
+<!-- ================================== END OF SPONSORS ============================== -->
+{{ end }}
