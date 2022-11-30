@@ -1,7 +1,7 @@
 /* ============================= GOALS ========================== */
 .sponsors {
     background: var(--color-bg1);
-    height: 29rem;
+    height: 26rem;
 }
 
 .sponsors h2 {
@@ -78,4 +78,55 @@
 .sponsor p {
     margin: 1.5rem 0 0;
     font-size: 0.85rem;
+}
+
+
+
+
+/* ======================== SPONSORS ====================== */
+
+.our_sponsors__container {
+    overflow-x: hidden;
+    position: relative;
+}
+
+.our_sponsor {
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    background: var(--color-bg2);
+    transition: var(--transition);
+    position: relative;
+
+}
+
+.our_sponsor:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.our_sponsor-logo {
+    padding: 1rem;
+    overflow: hidden;
+    align-items: center;
+}
+
+.our_sponsor-logo img {
+    border-radius: 1rem;
+    transition: var(--transition);
+}
+
+.our_sponsor-logo:focus-within img {
+    outline: 5px solid var(--color-danger);
+    transform: scale(0.8);
+    outline-offset: 5px;
+    border-radius: 5px;
+}
+
+.our_sponsor:hover img {
+    transform: scale(1.1);
+}
+
+.swiper-pagination {
+    position: relative;
+    padding-top: 1.5rem;
 }

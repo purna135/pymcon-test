@@ -56,4 +56,88 @@
     </div>
 </section>
 <!-- ================================== END OF SPONSORS ============================== -->
+<section class="section our_sponsors" id="our_sponsors">
+    {{ $sponsors := .Site.Data.sponsors}}
+    <h2>{{ $sponsors.title }}</h2>
+    <div class="container our_sponsors__container">
+        <div class="swiper logoSlider">
+            <div class="swiper-wrapper">
+                {{ range $sponsor := $sponsors.sponsor}}
+                    <div class="our_sponsor swiper-slide" id="{{ replace $sponsor.name " " "_" }}">
+                        <div class="our_sponsor-logo">
+                            <a href="{{ $sponsor.url }}">
+                                <img src="/{{ $sponsor.logoPath }}" alt="logo of {{ $sponsor.name }}">
+                            </a>
+                        </div>
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination logo-pagination"></div>
+</section>
+{{ end }}
+
+{{ define "customJS" }}
+    <!-- =============== SWIPER SLIDER =============== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- =============== SPONSORS SLIDER LOGIC ================ -->
+    <script>
+        var swiper = new Swiper(".speakerSlider", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: false,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: true,
+            },
+            pagination: {
+                el: ".speaker-pagination",
+                clickable: true,
+            },
+
+            // when windows width is >= 600px
+            breakpoints: {
+                // for Tablate
+                600: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                // for Desktop
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            }
+        });
+
+        var swiper = new Swiper(".logoSlider", {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            loop: false,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: true,
+            },
+            pagination: {
+                el: ".logo-pagination",
+                clickable: true,
+            },
+
+            // when windows width is >= 800px
+            breakpoints: {
+                // for Tablate
+                600: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                // for Desktop
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+            }
+        });
+    </script>
 {{ end }}
