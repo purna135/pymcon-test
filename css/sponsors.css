@@ -1,0 +1,81 @@
+/* ============================= GOALS ========================== */
+.sponsors {
+    background: var(--color-bg1);
+    height: 29rem;
+}
+
+.sponsors h2 {
+    text-align: left;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+
+.sponsors__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.sponsors__left {
+    margin-right: 4rem;
+}
+
+.sponsors__left p {
+    margin: 1rem 0 2rem;
+    font-size: 0.9rem;
+}
+
+.sponsors__left .btn {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+}
+
+.sponsors__right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.sponsor {
+    background: var(--color-bg2);
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+    color: var(--color-white);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+
+}
+
+.sponsor:hover {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.sponsor:nth-child(1) .sponsor__icon {
+    background: var(--color-red);
+}
+
+.sponsor:nth-child(2) .sponsor__icon {
+    background: var(--color-success);
+}
+
+.sponsor:nth-child(3) .sponsor__icon {
+    background: var(--color-warning);
+}
+
+.sponsor__icon {
+    background: var(--color-primary);
+    font-size: 2rem;
+    padding: 0.4rem;
+    border-radius: 0.9rem;
+}
+
+.sponsor h3 {
+    font-size: 0.97rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.sponsor p {
+    margin: 1.5rem 0 0;
+    font-size: 0.85rem;
+}
