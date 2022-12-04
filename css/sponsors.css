@@ -1,7 +1,7 @@
-/* ============================= GOALS ========================== */
+/* ============================= sponsors ========================== */
 .sponsors {
     background: var(--color-bg1);
-    height: 26rem;
+    height: 32rem;
 }
 
 .sponsors h2 {
@@ -12,16 +12,20 @@
 
 .sponsors__container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .sponsors__left {
-    margin-right: 4rem;
+    margin-right: 2rem;
 }
 
 .sponsors__left p {
-    margin: 1rem 0 2rem;
+    margin: 1rem 0 1rem;
     font-size: 0.9rem;
+}
+
+.sponsors__left p a {
+    text-decoration: underline;
 }
 
 .sponsors__left .btn {
@@ -33,100 +37,297 @@
 .sponsors__right {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: .5rem;
 }
 
-.sponsor {
+.sponsor_details {
     background: var(--color-bg2);
-    padding: 2rem;
-    border-radius: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
     transition: var(--transition);
     color: var(--color-white);
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
 
 }
 
-.sponsor:hover {
+.sponsor_details:hover {
     box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
 
-.sponsor:nth-child(1) .sponsor__icon {
+.sponsor_details:nth-child(1) .sponsor_details_icon {
     background: var(--color-red);
 }
 
-.sponsor:nth-child(2) .sponsor__icon {
+.sponsor_details:nth-child(2) .sponsor_details_icon {
     background: var(--color-success);
 }
 
-.sponsor:nth-child(3) .sponsor__icon {
+.sponsor_details:nth-child(3) .sponsor_details_icon {
     background: var(--color-warning);
 }
 
-.sponsor__icon {
+.sponsor_details_icon {
     background: var(--color-primary);
     font-size: 2rem;
-    padding: 0.4rem;
-    border-radius: 0.9rem;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
 }
 
-.sponsor h3 {
+.sponsor_details h3 {
     font-size: 0.97rem;
-    margin: 1.5rem 0 1rem;
+    margin: .5rem 0;
 }
 
-.sponsor p {
-    margin: 1.5rem 0 0;
+.sponsor_details p {
     font-size: 0.85rem;
 }
 
 
 
 
-/* ======================== SPONSORS ====================== */
-
-.our_sponsors__container {
+/* ======================== SPONSORS LOGO ====================== */
+.our_sponsors {
     overflow-x: hidden;
     position: relative;
+    text-align: center;
+    align-items: center;
 }
 
-.our_sponsor {
-    border-radius: 1rem;
-    border: 1px solid transparent;
-    background: var(--color-bg2);
-    transition: var(--transition);
+.our_sponsors hr {
+    border: none;
+    height: 3px;
+    width: 15%;
+    margin: 5px auto;
+    background-color: var(--color-white);
+}
+
+.our_sponsors__container h2 {
+    margin: 2rem 0 1rem;
+}
+
+.sponsor_logo {
     position: relative;
-
+    display: inline-block;
+    background: var(--color-bg2);
+    width: 16rem;
+    height: auto;
+    margin: 0.6rem;
+    padding: 1rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    transition: var(--transition);
 }
 
-.our_sponsor:hover {
+.sponsor_logo:hover {
+    border-radius: 0;
     background: transparent;
     border-color: var(--color-primary);
 }
 
-.our_sponsor-logo {
-    padding: 1rem;
-    overflow: hidden;
-    align-items: center;
-}
-
-.our_sponsor-logo img {
-    border-radius: 1rem;
+.sponsor_logo img {
     transition: var(--transition);
 }
 
-.our_sponsor-logo:focus-within img {
-    outline: 5px solid var(--color-danger);
-    transform: scale(0.8);
+.sponsor_logo:hover img {
+    transform: scale(1.07);
+}
+
+.sponsor_logo:focus-within img {
+    outline: 3px solid var(--color-red);
+    transform: scale(0.9);
     outline-offset: 5px;
     border-radius: 5px;
 }
 
-.our_sponsor:hover img {
-    transform: scale(1.1);
+
+
+/* ============================= SOCIAL REACH START ================================== */
+.social_reach {
+    background-color: var(--color-bg1);
 }
 
-.swiper-pagination {
-    position: relative;
-    padding-top: 1.5rem;
+.social_reach_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 }
+
+.social_reach_left h3 {
+    margin-bottom: 1rem;
+}
+
+.social_reach_left p {
+    margin: 1rem 0 1rem;
+    font-size: 0.9rem;
+}
+
+.social_reach_left ul li {
+    list-style-type: disc;
+    font-size: 0.9rem;
+    margin-left: 2rem;
+}
+
+.social_reach_table {
+    text-align: left;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    display: table;
+}
+
+.social_reach_table th {
+    font-size: 1rem;
+    color: var(--color-white);
+}
+
+.social_reach_table td {
+    font-size: 1rem;
+}
+
+.social_reach_table caption {
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.social_reach_table td,
+.social_reach_table th {
+    padding: 2% 0 2% 2%;
+}
+
+/* Background-color of the odd rows */
+.social_reach_table tr:nth-child(odd) {
+    background-color: var(--color-bg2);
+}
+
+/* Background-color of the even rows */
+.social_reach_table tr:nth-child(even) {
+    background-color: var(--color-primary);
+}
+
+.social_reach_table th {
+    background-color: var(--color-bg);
+}
+
+.social_reach_table a {
+    color: var(--color-warning);
+}
+
+.social_reach_table a i {
+    color: var(--color-white);
+}
+
+.social_reach_table tr:hover {
+    background-color: var(--color-bg);
+}
+
+.social_reach_table td:hover {
+    background-color: rgba(12, 170, 91, 0.1);
+    transition: var(--transition);
+}
+
+/* ============================= SOCIAL REACH END ================================== */
+
+
+
+/* ============================= START SPONSORS LEVELS TABLE ================================== */
+
+.levels_container {
+    margin: auto;
+    width: 100%;
+}
+
+.levels_container th,
+.levels_container td {
+    text-align: center;
+}
+
+.levels_container td:first-child {
+    text-align: left;
+}
+
+.levels_container tr:nth-child(even) {
+    background-color: var(--color-bg1)
+}
+
+.levels_container tr:nth-child(2n+3) {
+    background-color: var(--color-bg2)
+}
+
+.levels_container th {
+    font-size: 1rem;
+}
+
+.levels_container td {
+    font-size: 1rem;
+}
+
+.levels_container td,
+.levels_container th {
+    padding: 1% 0 1% 2%;
+}
+
+.levels_container th {
+    background-color: var(--color-bg);
+}
+
+.levels_container a {
+    color: var(--color-warning);
+}
+
+.levels_container tr:hover {
+    background-color: var(--color-bg);
+}
+
+.levels_container td:hover {
+    background-color: rgba(12, 170, 91, 0.1);
+    transition: var(--transition);
+}
+
+.txt-l {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.txt-2 {
+    font-weight: 500;
+}
+
+.txt-top {
+    position: relative;
+    top: -9px;
+    left: -2px;
+}
+
+.hide {
+    border: 0;
+    background: none !important;
+}
+
+.bg-purple {
+    border-top: 3px solid #A32362;
+}
+
+.bg-red {
+    border-top: 3px solid #fc4903;
+}
+
+.bg-blue {
+    border-top: 3px solid #0097CF;
+}
+
+.bg-green {
+    border-top: 3px solid var(--color-success);
+}
+
+.fa-check {
+    font-size: 1.2rem;
+    color: var(--color-success);
+}
+
+.fa-remove {
+    font-size: 1.2rem;
+    color: var(--color-red);
+}
+
+/* ============================= START SPONSORS LEVELS TABLE ================================== */
