@@ -25,6 +25,8 @@
 </header>
 <!-- ============================== END OF HEADER ===================== -->
 
+
+
 <!-- ================================== START OF SPONSORS DESCRIPTION ============================== -->
 <section class="section sponsors" id="sponsors">
     <div class="container sponsors__container">
@@ -71,60 +73,20 @@
 <!-- ================================== END OF SPONSORS DESCRIPTION ============================== -->
 
 
-<!-- ================================== END OF SPONSORS LOGOS ============================== -->
-<section class="section our_sponsors" id="pymcon_sponsors">
-    <h1>PyMCon 2020 Sponsors</h1>
-    <hr>
-    <div class="container our_sponsors__container">
-        <div id="metropolis-hastings-tier">
-            <h2>Metropolis-Hastings Tier</h2>
-            <div class="sponsor_logo">
-                <a href="https://tidelift.com/" target="_blank">
-                    <img src="/images/sponsors_logos/sp1.jpg" alt="logo of _">
-                </a>
-            </div>
-            <div class="sponsor_logo">
-                <a href="https://point72.com/" target="_blank">
-                    <img src="/images/sponsors_logos/sp2.jpg" alt="logo of _">
-                </a>
-            </div>
-            <div class="sponsor_logo">
-                <a href="https://pymc-labs.io/" target="_blank">
-                    <img src="/images/sponsors_logos/sp3.jpg" alt="logo of _">
-                </a>
-            </div>
-        </div>
 
-        <div id="communitypartner">
-            <h2>Community Partners</h2>
-            <div class="sponsor_logo">
-                <a href="http://ghana.pyladies.com/" target="_blank">
-                    <img src="/images/sponsors_logos/sp4.jpg" alt="logo of _">
-                </a>
-            </div>
+<!-- ================================== START OF 2023 SPONSOR ============================== -->
+<section class="section subscribe">
+    <div class="container subscribe__container">
+        <div class="subscribe__text">
+            <h2>Become a PyMCon 2023 Sponsor</h2>
+            <p>
+                In addition to sponsorships for the PyMCon series, we are also seeking recurring and longer-term partners to support our open source project and operations year-round. 
+            </p>
         </div>
-
-        <div id="techpartner">
-            <h2>Technology Partners</h2>
-            <div class="sponsor_logo">
-                <a href="https://zulip.com/" target="_blank">
-                    <img src="/images/sponsors_logos/sp5.jpg" alt="logo of _">
-                </a>
-            </div>
-        </div>
-
-        <div id="nonprofitsponsor">
-            <h2>Non-profit Sponsors</h2>
-            <div class="sponsor_logo">
-                <a href="https://numfocus.org/" target="_blank">
-                    <img src="/images/sponsors_logos/sp6.jpg" alt="logo of _">
-                </a>
-            </div>
-        </div>
+        <a href="{{ ref . "contact" }}" class="btn subscribe__btn">Contact Us</a>
     </div>
 </section>
-
-<!-- ================================== END OF SPONSORS LOGOS ============================== -->
+<!-- ================================== END OF 2023 SPONSOR ============================== -->
 
 
 
@@ -185,7 +147,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <a href="https://twitter.com/pymc_devs" target="_blank">
+                            <a href="{{ .Site.Author.twitter }}" target="_blank">
                                 <i class="uil uil-twitter"></i> Twitter
                             </a>
                         </td>
@@ -193,7 +155,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <a href="https://www.linkedin.com/company/pymc" target="_blank">
+                            <a href="{{ .Site.Author.linkedin }}" target="_blank">
                                 <i class="uil uil-linkedin-alt"></i> LinkedIn
                             </a>
                         </td>
@@ -201,7 +163,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <a href="https://www.youtube.com/c/PyMCDevelopers" target="_blank">
+                            <a href="{{ .Site.Author.youtube }}" target="_blank">
                                 <i class="uil uil-youtube"></i> YouTube
                             </a>
                         </td>
@@ -211,7 +173,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <a href="https://www.meetup.com/pymc-online-meetup/" target="_blank">
+                            <a href="{{ .Site.Author.meetup }}" target="_blank">
                                 <i class="fa fa-meetup"></i> Meetup
                             </a>
                         </td>
@@ -219,7 +181,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <a href="https://github.com/pymc-devs/pymc" target="_blank">
+                            <a href="{{ .Site.Author.github }}" target="_blank">
                                 <i class="uil uil-github"></i> GitHub
                             </a>
                         </td>
@@ -237,7 +199,7 @@
 <!-- ================================== START OF PyMCon Sponsorship Levels ============================== -->
 <section class="section sponsorship_levels" id="pymcon_sponsorship_levels">
     <h2>PyMCon Sponsorship Levels</h2>
-    <div class="container ">
+    <div class="container">
         <table class="levels_container">
             <tr>
                 <th class="hide"></th>
@@ -248,7 +210,7 @@
             </tr>
             <tr>
                 <td><span class="txt-2">Sponsorship Category</span></td>
-                <td><span class="txt-2">(Contact us for custom sponsorships)</span></td>
+                <td><span class="txt-2"><a href="{{ ref . "contact" }}">Contact us for custom sponsorships</a></span></td>
                 <td><span class="txt-top">$</span><span class="txt-l">5,000</span></td>
                 <td><span class="txt-top">$</span><span class="txt-l">2,000</span></td>
                 <td><span class="txt-top">$</span><span class="txt-l">1,000</span></td>
@@ -303,4 +265,60 @@
     </div>
 </section>
 <!-- ================================== END OF PyMCon Sponsorship Levels ============================== -->
+
+
+
+<!-- ================================== END OF 2020 SPONSORS LOGOS ============================== -->
+<section class="section our_sponsors" id="pymcon_sponsors">
+    <h1>PyMCon 2020 Sponsors</h1>
+    <hr>
+    <div class="container our_sponsors__container">
+        <div id="metropolis-hastings-tier">
+            <h2>Metropolis-Hastings Tier</h2>
+            <div class="sponsor_logo">
+                <a href="https://tidelift.com/" target="_blank">
+                    <img src="/images/sponsors_logos/sp1.jpg" alt="logo of _">
+                </a>
+            </div>
+            <div class="sponsor_logo">
+                <a href="https://point72.com/" target="_blank">
+                    <img src="/images/sponsors_logos/sp2.jpg" alt="logo of _">
+                </a>
+            </div>
+            <div class="sponsor_logo">
+                <a href="https://pymc-labs.io/" target="_blank">
+                    <img src="/images/sponsors_logos/sp3.jpg" alt="logo of _">
+                </a>
+            </div>
+        </div>
+
+        <div id="communitypartner">
+            <h2>Community Partners</h2>
+            <div class="sponsor_logo">
+                <a href="http://ghana.pyladies.com/" target="_blank">
+                    <img src="/images/sponsors_logos/sp4.jpg" alt="logo of _">
+                </a>
+            </div>
+        </div>
+
+        <div id="techpartner">
+            <h2>Technology Partners</h2>
+            <div class="sponsor_logo">
+                <a href="https://zulip.com/" target="_blank">
+                    <img src="/images/sponsors_logos/sp5.jpg" alt="logo of _">
+                </a>
+            </div>
+        </div>
+
+        <div id="nonprofitsponsor">
+            <h2>Non-profit Sponsors</h2>
+            <div class="sponsor_logo">
+                <a href="https://numfocus.org/" target="_blank">
+                    <img src="/images/sponsors_logos/sp6.jpg" alt="logo of _">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ================================== END OF 2020 SPONSORS LOGOS ============================== -->
 {{ end }}

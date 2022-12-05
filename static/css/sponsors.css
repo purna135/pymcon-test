@@ -85,59 +85,42 @@
 
 
 
-
-/* ======================== SPONSORS LOGO ====================== */
-.our_sponsors {
-    overflow-x: hidden;
-    position: relative;
-    text-align: center;
+/* ======================== BECOME A 2023 SPONSOR ====================== */
+.subscribe__container {
+    background: var(--color-primary);
+    color: var(--color-white);
+    display: grid;
+    grid-template-columns: 3.5fr 1fr;
+    gap: 2rem;
     align-items: center;
+    padding: 4rem;
+    border-radius: 2rem;
+    z-index: 1;
+    border: 2px solid;
+    border-color: var(--color-light);
+    margin-top: 8rem;
 }
 
-.our_sponsors hr {
-    border: none;
-    height: 3px;
-    width: 15%;
-    margin: 5px auto;
-    background-color: var(--color-white);
+.subscribe__container:hover {
+    box-shadow: 3rem 3rem 3rem rgba(0, 0, 0, 0.3);
 }
 
-.our_sponsors__container h2 {
-    margin: 2rem 0 1rem;
+.subscribe__text p {
+    margin-top: 1rem;
 }
 
-.sponsor_logo {
-    position: relative;
-    display: inline-block;
-    background: var(--color-bg2);
-    width: 16rem;
-    height: auto;
-    margin: 0.6rem;
-    padding: 1rem;
-    border: 1px solid transparent;
+.subscribe__text h2 {
+    font-size: 1.7rem;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.subscribe__btn {
+    font-size: 0.9rem;
+    text-align: center;
     border-radius: 1rem;
-    transition: var(--transition);
-}
-
-.sponsor_logo:hover {
-    border-radius: 0;
-    background: transparent;
-    border-color: var(--color-primary);
-}
-
-.sponsor_logo img {
-    transition: var(--transition);
-}
-
-.sponsor_logo:hover img {
-    transform: scale(1.07);
-}
-
-.sponsor_logo:focus-within img {
-    outline: 3px solid var(--color-red);
-    transform: scale(0.9);
-    outline-offset: 5px;
-    border-radius: 5px;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
 
 
@@ -225,13 +208,11 @@
     background-color: rgba(12, 170, 91, 0.1);
     transition: var(--transition);
 }
-
 /* ============================= SOCIAL REACH END ================================== */
 
 
 
 /* ============================= START SPONSORS LEVELS TABLE ================================== */
-
 .levels_container {
     margin: auto;
     width: 100%;
@@ -329,5 +310,60 @@
     font-size: 1.2rem;
     color: var(--color-red);
 }
-
 /* ============================= START SPONSORS LEVELS TABLE ================================== */
+
+
+
+/* ======================== 2020 SPONSORS LOGO ====================== */
+.our_sponsors {
+    overflow-x: hidden;
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+
+.our_sponsors hr {
+    border: none;
+    height: 3px;
+    width: 15%;
+    margin: 5px auto;
+    background-color: var(--color-white);
+}
+
+.our_sponsors__container h2 {
+    margin: 2rem 0 1rem;
+}
+
+.sponsor_logo {
+    position: relative;
+    display: inline-block;
+    background: var(--color-bg2);
+    width: 16rem;
+    height: auto;
+    margin: 0.6rem;
+    padding: 1rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    transition: var(--transition);
+}
+
+.sponsor_logo:hover {
+    border-radius: 0;
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.sponsor_logo img {
+    transition: var(--transition);
+}
+
+.sponsor_logo:hover img {
+    transform: scale(1.07);
+}
+
+.sponsor_logo:focus-within img {
+    outline: 3px solid var(--color-red);
+    transform: scale(0.9);
+    outline-offset: 5px;
+    border-radius: 5px;
+}
