@@ -212,10 +212,6 @@
 
 
 /* ============================= START SPONSORS LEVELS TABLE ================================== */
-.sponsorship_levels {
-    overflow: scroll;
-}
-
 .levels_container {
     margin: auto;
     width: 100%;
@@ -445,6 +441,10 @@
     }
 
     /* =============================  bhSPONSORS LEVELS TABLE ================= */
+    .sponsorship_levels {
+        overflow-x: scroll;
+    }
+    
     .levels_container th {
         font-size: 0.8rem;
     }
