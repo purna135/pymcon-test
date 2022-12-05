@@ -213,7 +213,7 @@
 
 /* ============================= START SPONSORS LEVELS TABLE ================================== */
 .sponsorship_levels {
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .levels_container {
