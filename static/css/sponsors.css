@@ -330,7 +330,7 @@
 .our_sponsors hr {
     border: none;
     height: 3px;
-    width: 15%;
+    width: 10%;
     margin: 5px auto;
     background-color: var(--color-white);
 }
@@ -344,7 +344,7 @@
     position: relative;
     display: inline-block;
     background: var(--color-bg2);
-    width: 16rem;
+    width: 15rem;
     height: auto;
     margin: 0.6rem;
     padding: 1rem;
@@ -372,4 +372,101 @@
     transform: scale(0.9);
     outline-offset: 5px;
     border-radius: 5px;
+}
+
+
+
+
+/* =================== MEDIA QUERIES (TABLETS) ========================= */
+
+@media screen and (max-width: 1024px) {
+    /* ============================= sponsors ========================== */
+    .sponsors {
+        height: auto;
+    }
+
+    .sponsors__container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .sponsors__left {
+        margin-right: 0;
+    }
+
+    .sponsors__right {
+        gap: 1rem;
+    }
+
+    /* ========================== SUBSCRIBE =========================== */
+    .subscribe__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .subscribe__text h2 {
+        text-align: center;
+    }
+
+    /* ======================== 2020 SPONSORS LOGO ====================== */
+    .sponsor_logo {
+        width: 13rem;
+        margin: 0.4rem;
+        padding: 0.8rem;
+    }
+
+    .our_sponsors__container h2 {
+        margin: 1rem 0 0.5rem;
+        font-size: 1.3rem;
+    }
+}
+
+
+
+/* =================== MEDIA QUERIES (PHONES) ========================= */
+@media screen and (max-width: 600px) {
+    /* ======================= GOALS ======================== */
+    .sponsors__right {
+        grid-template-columns: 1fr;
+    }
+
+    /* ================== SOCIAL REACH START ===================== */
+    .social_reach_container {
+        grid-template-columns: 1fr;
+    }
+
+    /* ======================= SUBSCRIBE ======================== */
+    .subscribe__container {
+        padding: 2rem;
+    }
+
+    /* =============================  bhSPONSORS LEVELS TABLE ================= */
+    .levels_container th {
+        font-size: 0.8rem;
+    }
+    
+    .levels_container td {
+        font-size: 0.8rem;
+    }
+
+    .txt-l {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .fa-check {
+        font-size: 1rem;
+    }
+    
+    .fa-remove {
+        font-size: 1rem;
+    }
+
+    /* ======================== 2020 SPONSORS LOGO ====================== */
+    .sponsor_logo {
+        width: 12rem;
+        margin: 0.2rem;
+        padding: 0.6rem;
+    }
 }
