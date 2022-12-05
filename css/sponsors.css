@@ -212,6 +212,10 @@
 
 
 /* ============================= START SPONSORS LEVELS TABLE ================================== */
+.sponsorship_levels {
+    overflow: hidden;
+}
+
 .levels_container {
     margin: auto;
     width: 100%;
@@ -411,7 +415,6 @@
 
     /* ======================== 2020 SPONSORS LOGO ====================== */
     .sponsor_logo {
-        width: 13rem;
         margin: 0.4rem;
         padding: 0.8rem;
     }
@@ -465,7 +468,6 @@
 
     /* ======================== 2020 SPONSORS LOGO ====================== */
     .sponsor_logo {
-        width: 12rem;
         margin: 0.2rem;
         padding: 0.6rem;
     }
