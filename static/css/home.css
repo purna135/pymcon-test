@@ -263,7 +263,7 @@
     margin: 0.5rem 0 1rem;
     font-size: 0.9rem;
     line-height: 1.3rem;
-    max-height: 3.9rem; /* height is 3x line-height, so 3 lines will display */
+    max-height: 5.2rem; /* height is 3x line-height, so 3 lines will display */
     overflow: hidden;
 }
 
