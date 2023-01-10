@@ -450,7 +450,7 @@ img {
     }
 
     .small__header__right {
-        grid-row: 1;
+        grid-row: 1 !important;
         z-index: -10;
     }
 
