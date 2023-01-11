@@ -435,8 +435,8 @@ img {
     
     /* ======================= SMALL HEADER ======================== */
     .small__header {
-        height: 70vh;
-        margin-top: 4rem;
+        height: 75vh;
+        margin-top: 2rem;
     }
 
     .small__header__container {
@@ -445,13 +445,17 @@ img {
         margin-top: 0;
     }
 
-    .small__header__left p {
-        margin-bottom: 1.3rem;
+    .small__header__right {
+        grid-row: 1;
+    }
+    
+    .small__header__left{
+        grid-row: 2;
+        z-index: 1;
     }
 
-    .small__header__right {
-        grid-row: 1 !important;
-        z-index: -10;
+    .small__header__left p {
+        margin-bottom: 1.3rem;
     }
 
     .footer__logo {
