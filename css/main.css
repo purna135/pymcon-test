@@ -447,11 +447,11 @@ img {
 
     .small__header__right {
         grid-row: 1;
+        background: var(--color-bg1);
     }
     
     .small__header__left{
         grid-row: 2;
-        z-index: 1;
     }
 
     .small__header__left p {
